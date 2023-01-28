@@ -45,7 +45,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-
+app.MapGet("/swag", () => "Hello Swagger!");
+app.MapGet("/skipme", () => "Skipping Swagger.");
 
 
 
